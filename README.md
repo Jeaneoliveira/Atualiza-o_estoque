@@ -12,10 +12,9 @@ Este projeto contém um script PHP para atualizar o estoque em um banco de dados
 
 ## Configuração
 
-1. *Configuração do Banco de Dados*:
-   - Abra o phpMyAdmin (http://localhost/phpmyadmin).
-   - Crie um banco de dados (se ainda não existir).
-   - Execute o script SQL localizado em schema.sql para criar a tabela estoque.
+1. *Importe o arquivo `estoque.sql` para criar a tabela e inserir os dados de exemplo:
+    - No phpMyAdmin, vá para a aba "Importar" e selecione o arquivo `estoque.sql`.
+    - Clique em "Executar".
 
 2. *Configuração do Código PHP*:
    - Salve o arquivo PHP (atualizacao_estoque.php) no diretório C:\wamp\www (ou o caminho correspondente no seu sistema).
@@ -26,6 +25,8 @@ Este projeto contém um script PHP para atualizar o estoque em um banco de dados
 
 4. *Verificar a Atualização*:
    - No phpMyAdmin, selecione o banco de dados e verifique se a tabela estoque foi atualizada corretamente.
+  
+   - se ao acessar `http://localhost/atualizar_estoque.php` no navegador aparecer a mensagem "Estoque atualizado com sucesso!", isso indica que o script PHP foi executado corretamente e os dados foram inseridos ou atualizados no banco de dados conforme esperado.
 
 ## Notas
 
