@@ -6,7 +6,7 @@ function atualizarEstoque($jsonData) {
     $db   = 'estoque';
     $user = 'root';
     $pass = 'willyan';
-    $charset = 'utf8mb4'; // Altere para utf8mb4 para compatibilidade com charset da tabela
+    $charset = 'utf8mb4'; 
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
     $options = [
@@ -35,7 +35,7 @@ function atualizarEstoque($jsonData) {
             // Tentativa de inserção
             $insertStmt->execute($item);
         } catch (PDOException $e) {
-            // Em caso de erro, tenta a atualização
+            // Em caso de erro, tentar a atualização
             if ($e->getCode() == 23000) { // Código 23000 indica um erro de chave duplicada
                 $updateStmt->execute($item);
             } else {
