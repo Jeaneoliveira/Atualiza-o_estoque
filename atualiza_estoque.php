@@ -5,7 +5,7 @@ function atualizarEstoque($jsonData) {
     $host = 'localhost';
     $db   = 'estoque';
     $user = 'root';
-    $pass = 'willyan';
+    $pass = '';
     $charset = 'utf8mb4'; 
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
