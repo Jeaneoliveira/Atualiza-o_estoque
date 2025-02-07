@@ -27,7 +27,7 @@ Este projeto contém um script PHP para atualizar o estoque em um banco de dados
    - No phpMyAdmin, selecione o banco de dados e verifique se a tabela estoque foi atualizada corretamente.
   
    - se ao acessar `http://localhost/atualizar_estoque.php` no navegador aparecer a mensagem "Estoque atualizado com sucesso!", isso indica que o script PHP foi executado corretamente e os dados foram inseridos ou atualizados no banco de dados conforme esperado.
-
+![Imagem do Projeto](https://github.com/Jeaneoliveira/Atualiza-o_estoque/blob/main/estoque.jpg?raw=true)
 ## Notas
 
 - Certifique-se de que o WAMP está em execução e que os serviços Apache e MySQL estão ativos.
